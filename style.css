@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Blinker", sans-serif;
+    text-decoration: none;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+
+.box
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2
+{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.box ul
+{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-bottom: 10px solid #03a9f4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.box ul li
+{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+    color: gray;
+}
+
+.box ul:hover li
+{
+    opacity: 0.4;
+}
+
+.box ul li:hover
+{
+   transform: scale(1.1);
+   z-index: 100;
+   background: #25bcff;
+   box-shadow: 0 5px 25px rgba(0,0,0,.2);
+   color: #fff;
+   border-radius: 3px;
+   opacity: 1;
+   cursor: pointer;
+}
+
+.box ul li span
+{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #25bcff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.box ul li:hover span
+{
+    background: #fff;
+    color: #25bcff;
+}
+
+.box .imgBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px double #25bcff;
+}
+
+.box .imgBox img
+{
+    height: 120px;
+}
+
+.box .name
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #25bcff;
+    margin-bottom: 20px;
+}
