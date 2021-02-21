@@ -26,22 +26,24 @@
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
         <a href="#">Learn More</a>
       </div>
-      <div class="imgBox">
-        <img src="./imgs/caramelo_G.png" alt="Image" class="starbucks">
-        <div class="shadow"></div>
+      <div class="product-details">
+        <div class="product-name">
+          <h2>Caramel Ribbon</h2>
+        </div>
+        <div class="price">
+          <h2>$ 23.90</h2>
+        </div>
+        <div class="imgBox">
+          <img src="./imgs/caramelo_G.png" alt="Image" class="starbucks">
+          <div class="shadow"></div>
+        </div>
       </div>
     </div>
     <ul class="thumb">
-      <li><img src="./imgs/caramelo.png" alt="Image" onclick="imgSlider('./imgs/caramelo_G.png');changeCircleColor('#017143')"></li>
-      <li><img src="./imgs/chocolate.png" alt="Image" onclick="imgSlider('./imgs/chocolate_G.png');changeCircleColor('#BA8E4D')"></li>
-      <li><img src="./imgs/chiclete.png" alt="Image" onclick="imgSlider('./imgs/chiclete_G.png');changeCircleColor('#DE00A9')"></li>
-      <li><img src="./imgs/morango.png" alt="Image" onclick="imgSlider('./imgs/morango_G.png');changeCircleColor('#ED2840')"></li>
-    </ul>
-    <ul class="sci">
-      <li><a href=""><img src="./imgs/facebook.png" alt="Image"></a></li>
-      <li><a href=""><img src="./imgs/instagram.png" alt="Image"></a></li>
-      <li><a href=""><img src="./imgs/youtube.png" alt="Image"></a></li>
-      <li><a href=""><img src="./imgs/twitter.png" alt="Image"></a></li>
+      <li><img src="./imgs/caramelo.png" alt="Image" onclick="imgSlider('./imgs/caramelo_G.png');changeCircleColor('#017143');changeProductName('Caramel Ribbon')"></li>
+      <li><img src="./imgs/chocolate.png" alt="Image" onclick="imgSlider('./imgs/chocolate_G.png');changeCircleColor('#BA8E4D');changeProductName('Chocolate Ribbon')"></li>
+      <li><img src="./imgs/chiclete.png" alt="Image" onclick="imgSlider('./imgs/chiclete_G.png');changeCircleColor('#DE00A9');changeProductName('Chiclete Ribbon')"></li>
+      <li><img src="./imgs/morango.png" alt="Image" onclick="imgSlider('./imgs/morango_G.png');changeCircleColor('#ED2840');changeProductName('Morango Ribbon')"></li>
     </ul>
   </section>
   <script type="text/javascript">
@@ -52,6 +54,10 @@
     function changeCircleColor(color){
       const circle = document.querySelector('.circle');
       circle.style.background = color;
+    }
+    function changeProductName(name){
+      const productName = document.querySelector('.product-name h2');
+      productName.textContent = name;
     }
 
     function toggleMenu(){
