@@ -90,6 +90,25 @@ body
   font-size: 28px;
 }
 
+.downloadCv {
+  margin-top: 2rem;
+  background-color: #8200f3;
+  border-radius: 5px;
+
+  padding: 1rem 2rem;
+  transition: .2s;
+}
+
+.downloadCv:hover {
+  background-color: #6b00d9;
+  cursor: pointer;
+}
+
+.downloadCv a {
+  color: #fafafa;
+  font-weight: 700;
+}
+
 .projects-box
 {
   display: flex;
