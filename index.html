@@ -1,129 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2021 - Stenio Almeida</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio 2021 - Stenio Almeida</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <!-- styles -->
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <section class="profile-box">
-    <div class="profile-img-box">
-      <img src="./imgs/profile-photo.png" alt="">
-    </div>
-    <div class="name-box">
-      <p class="name">Stenio Almeida</p>
-    </div>
-    <div class="occupation-box">
-      <p class="occupation">Front-End Developer</p>
-    </div>
-    <div class="sci">
-      <a href="https://www.linkedin.com/in/stenioas/" target="_blank"><i class="fab fa-linkedin"
-          style="color: #2968BC;"></i></a>
-      <a href="https://github.com/stenioas" target="_blank"><i class="fab fa-github-square"
-          style="color: #25292E;"></i></a>
-    </div>
-    <div class="downloadCv">
-      <a href="https://docs.google.com/viewerng/viewer?url=https://github.com/stenioas/stenioas.github.io/raw/master/downloads/cv-stenio-2021.pdf"
-        target="_blank">Download CV</a>
-    </div>
-  </section>
-  <section class="projects-box">
-    <div class="projects-title">
-      <h1>HTML5, CSS3, JavaScript</h1>
-    </div>
-    <div class="cards-box">
-      <div class="card-box" onclick="window.open('./starbucks-homepage/index.html', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-starbucks.png" alt="image">
+  <body>
+    <section class="profile-box">
+      <div class="profile-img-box">
+        <img src="./imgs/profile-photo.png" alt="" />
+      </div>
+      <div class="name-box">
+        <p class="name">Stenio Almeida</p>
+      </div>
+      <div class="occupation-box">
+        <p class="occupation">Front-End Developer</p>
+      </div>
+      <div class="sci">
+        <a href="https://www.linkedin.com/in/stenioas/" target="_blank"
+          ><i class="fab fa-linkedin" style="color: #2968bc"></i
+        ></a>
+        <a href="https://github.com/stenioas" target="_blank"
+          ><i class="fab fa-github-square" style="color: #25292e"></i
+        ></a>
+      </div>
+      <div class="downloadCv">
+        <a
+          href="https://docs.google.com/viewerng/viewer?url=https://github.com/stenioas/stenioas.github.io/raw/master/misc/cv-stenio-2021.pdf"
+          target="_blank"
+          >Download CV</a
+        >
+      </div>
+    </section>
+    <section class="projects-box">
+      <div class="projects-title">
+        <h1>HTML5, CSS3, JavaScript</h1>
+      </div>
+      <div class="cards-box">
+        <div
+          class="card-box"
+          onclick="window.open('./starbucks-homepage/index.html', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-starbucks.png" alt="image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Starbucks Concept</h2>
+          </div>
         </div>
-        <div class="card-content-box">
-          <h2>Starbucks Concept</h2>
+        <div
+          class="card-box"
+          onclick="window.open('./login-form/index.html', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-login-form.png" alt="Login Form Image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Login Form</h2>
+          </div>
+        </div>
+        <div
+          class="card-box"
+          onclick="window.open('https://stenioas.github.io/dev.finance', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-devfinance.png" alt="Finance project image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Finance App</h2>
+          </div>
+        </div>
+        <div
+          class="card-box"
+          onclick="window.open('https://stenioas.github.io/mentalistapokemon/', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-pokemon.png" alt="Pokémon project image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Pokémon Game</h2>
+          </div>
         </div>
       </div>
-      <div class="card-box" onclick="window.open('./login-form/index.html', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-login-form.png" alt="Login Form Image">
+    </section>
+    <section class="projects-box">
+      <div class="projects-title">
+        <h1>React</h1>
+      </div>
+      <div class="cards-box">
+        <div
+          class="card-box"
+          onclick="window.open('https://youmove.vercel.app', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-movitu.png" alt="Youmove React App" />
+          </div>
+          <div class="card-content-box">
+            <h2>Pomodoro App</h2>
+          </div>
         </div>
-        <div class="card-content-box">
-          <h2>Login Form</h2>
+        <div
+          class="card-box"
+          onclick="window.open('https://github.com/MeAjudaDev/greenwallet-react', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-greenwallet.png" alt="Green Wallet App" />
+          </div>
+          <div class="card-content-box">
+            <h2>Finance App (Developing)</h2>
+          </div>
         </div>
       </div>
-      <div class="card-box" onclick="window.open('https://stenioas.github.io/dev.finance', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-devfinance.png" alt="Finance project image">
+    </section>
+    <section class="projects-box">
+      <div class="projects-title">
+        <h1>Another Projects</h1>
+      </div>
+      <div class="cards-box">
+        <div
+          class="card-box"
+          onclick="window.open('https://github.com/stenioas/malpi', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-shell-project.png" alt="image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Archlinux Installer</h2>
+          </div>
         </div>
-        <div class="card-content-box">
-          <h2>Finance App</h2>
+        <div
+          class="card-box"
+          onclick="window.open('https://github.com/stenioas/geraboh', '_blank')"
+        >
+          <div class="project-img-box">
+            <img src="./imgs/capa-python-project.png" alt="image" />
+          </div>
+          <div class="card-content-box">
+            <h2>Python Project</h2>
+          </div>
         </div>
       </div>
-      <div class="card-box" onclick="window.open('https://stenioas.github.io/mentalistapokemon/', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-pokemon.png" alt="Pokémon project image">
-        </div>
-        <div class="card-content-box">
-          <h2>Pokémon Game</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="projects-box">
-    <div class="projects-title">
-      <h1>React</h1>
-    </div>
-    <div class="cards-box">
-      <div class="card-box" onclick="window.open('https://youmove.vercel.app', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-movitu.png" alt="Youmove React App">
-        </div>
-        <div class="card-content-box">
-          <h2>Pomodoro App</h2>
-        </div>
-      </div>
-      <div class="card-box" onclick="window.open('https://github.com/MeAjudaDev/greenwallet-react', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-greenwallet.png" alt="Green Wallet App">
-        </div>
-        <div class="card-content-box">
-          <h2>Finance App (Developing)</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="projects-box">
-    <div class="projects-title">
-      <h1>Another Projects</h1>
-    </div>
-    <div class="cards-box">
-      <div class="card-box" onclick="window.open('https://github.com/stenioas/malpi', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-shell-project.png" alt="image">
-        </div>
-        <div class="card-content-box">
-          <h2>Archlinux Installer</h2>
-        </div>
-      </div>
-      <div class="card-box" onclick="window.open('https://github.com/stenioas/geraboh', '_blank')">
-        <div class="project-img-box">
-          <img src="./imgs/capa-python-project.png" alt="image">
-        </div>
-        <div class="card-content-box">
-          <h2>Python Project</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
